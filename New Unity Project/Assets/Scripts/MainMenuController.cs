@@ -15,6 +15,12 @@ public class MainMenuController : MonoBehaviour {
 			menuSections.gameObject.SetActive (false);
 		}
 	}
+    private void Start() {
+        if (menuSections != null)
+        {
+            menuSections.gameObject.SetActive(false);
+        }
+    }
 	// Use this for initialization
 	public void SetState(ISection sect,bool state){
 		if (curentActiveSection != null && sect != curentActiveSection) {

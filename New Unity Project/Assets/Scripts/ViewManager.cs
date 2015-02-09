@@ -12,6 +12,7 @@ public class ViewManager : MonoBehaviour {
 	public VisualStyle CurrentStyle{get{ return currentStyle;}}
 	public event Action<string> chStyle;
 	public static ViewManager instance;
+    private LocalLan LC;
 	public static ViewManager Instance {
 		get {
 			if (instance == null) {
@@ -27,8 +28,8 @@ public class ViewManager : MonoBehaviour {
 	}
 	# endregion
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+        LC = gameObject.AddComponent<LocalLan>();
 	}
 	
 	// Update is called once per frame

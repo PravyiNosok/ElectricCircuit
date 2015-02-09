@@ -1,8 +1,14 @@
-File
-Options
-Help
-Exit
-Resistor
-Condensator
-Lamp
-Power source
+File|File
+Open|Brbr
+Exit|Fbfb
+Options|
+Help|
+Exit|
+Resistor|
+Condensator|
+Lamp|Lyampochka
+Battery|
+Inductor|
+Power source|
+NewFile|
+Save|

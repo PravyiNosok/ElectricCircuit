@@ -245,7 +245,6 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\Resources\Localization\EN.txt" />
-    <None Include="Assets\Resources\Localization\EN_test.txt" />
     <None Include="Assets\Resources\Localization\TR.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
