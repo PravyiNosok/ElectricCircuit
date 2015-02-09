@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Element.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ViewManager.cs" Line="15" Column="37" />
+      <File FileName="Assets\Scripts\ElementManager.cs" Line="7" Column="41" />
+      <File FileName="Assets\Scripts\Battery.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\Element.cs" Line="18" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
