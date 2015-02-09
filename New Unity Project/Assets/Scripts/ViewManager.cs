@@ -13,6 +13,7 @@ public class ViewManager : MonoBehaviour {
 	public event Action<string> chStyle;
 	public static ViewManager instance;
     private LocalLan LC;
+    private MainMenuController mainM;
 	public static ViewManager Instance {
 		get {
 			if (instance == null) {
@@ -30,6 +31,8 @@ public class ViewManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         LC = gameObject.AddComponent<LocalLan>();
+        LC.Init();
+        MainMenuController.Instance.Init();
 	}
 	
 	// Update is called once per frame

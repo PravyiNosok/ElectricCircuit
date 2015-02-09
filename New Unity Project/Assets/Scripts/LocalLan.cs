@@ -14,6 +14,7 @@ public class LocalLan : MonoBehaviour {
         {
 			if (!string.IsNullOrEmpty(_98.name))
 				_74234826[_98.name] = _98;
+            Debug.Log(_98.name);
 		}
         string pref = PlayerPrefs.GetString("lan");
         if (!string.IsNullOrEmpty(pref)) {
@@ -22,17 +23,9 @@ public class LocalLan : MonoBehaviour {
         _72348829 = new Dictionary<string, TextAsset>();
         SetLan(currentLanguage);
 	}
-#if UNITY_EDITOR 
-	void Awake(){
+	public void Init(){
 		GetAllElements ();
 	}
-#else
-   // Use this for initialization
-	void Start () {
-		GetAllElements ();
-	}
-	
-#endif
     public void SetLan(string _8942) { 
         TextAsset _tx;
         if (!_72348829.ContainsKey(_8942)) {

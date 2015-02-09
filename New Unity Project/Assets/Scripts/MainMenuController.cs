@@ -4,23 +4,24 @@ using System.Collections;
 public class MainMenuController : MonoBehaviour {
 	public ISection curentActiveSection;
 	private bool menuOn = false;
-	public static MainMenuController Instance;
+    public static MainMenuController instance;
+	public static MainMenuController Instance{
+        get {
+            if (instance == null)
+                instance = FindObjectOfType<MainMenuController>();
+            if (instance == null)
+                    instance = new GameObject("mainmenu").AddComponent<MainMenuController>(); 
+            return instance;}
+    }
 	[SerializeField] private GameObject menuSections;
 	[SerializeField] private float openSpeed = 1;
-	private void Awake(){
-		Instance = this;
+	public void Init(){
 		if (menuSections != null) {
 			menuSections.transform.localScale = Vector3.one * 0.1f;
 			menuOn = false;
 			menuSections.gameObject.SetActive (false);
 		}
 	}
-    private void Start() {
-        if (menuSections != null)
-        {
-            menuSections.gameObject.SetActive(false);
-        }
-    }
 	// Use this for initialization
 	public void SetState(ISection sect,bool state){
 		if (curentActiveSection != null && sect != curentActiveSection) {
